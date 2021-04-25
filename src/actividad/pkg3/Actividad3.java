@@ -18,13 +18,23 @@ public class Actividad3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-   Scanner entrada = new Scanner(System.in);
-        
-        System.out.println("***************************************************");
-        System.out.println("**********          Bienvenido           **********");
-        System.out.println("***************************************************");
+    Scanner entrada = new Scanner(System.in);
+        System.out.println("======================================================");
+        System.out.println("           Universidad Autonoma de Campeche           ");
+        System.out.println("======================================================");
+        System.out.println("        Ingenieria en Sistemas Computacionales        ");
+        System.out.println("======================================================");
+        System.out.println("        Salvador Moises Alberto Valle Saenz           ");
+        System.out.println("======================================================");
+        System.out.println("                       2 - A                          ");
+        System.out.println("======================================================");
         System.out.println("");
-        System.out.println("Tome el numero de su eleccion:");
+        System.out.println("");
+        System.out.println("======================================================");
+        System.out.println("===============       Bienvenido     =================");
+        System.out.println("======================================================");
+        System.out.println("");
+        System.out.println("Tome el numero de su eleccion");
         System.out.println("");
         System.out.println("Suma del 1 al 10.-------------------------------[1]");
         System.out.println("Factorial del 10.-------------------------------[2]");
@@ -34,15 +44,14 @@ public class Actividad3 {
         System.out.println("Dias de la semana.------------------------------[6]");
         System.out.println("Estructura del juego Gato.----------------------[7]");
         System.out.println("");
-        System.out.print("Introduzca un número: ");
-
+        System.out.print("Introduzca el numero seleccionado: ");
         principal(entrada.nextInt());
 
     }
     
     public static void principal(int numero){
         
-        Scanner entrada = new Scanner(System.in);
+    Scanner entrada = new Scanner(System.in);
         
         int numeroE = numero;
         
@@ -50,54 +59,54 @@ public class Actividad3 {
             
             case 1:
                 System.out.println("");
-                System.out.println("********************************************");
-                System.out.println("**********    Suma del 1 al 10    **********");
-                System.out.println("********************************************");
+                System.out.println("--------------------------------------------");
+                System.out.println("----------    Suma del 1 al 10    ----------");
+                System.out.println("--------------------------------------------");
                 System.out.println("");
                 suma();
                 break;
             case 2:
                 System.out.println("");
-                System.out.println("********************************************");
-                System.out.println("**********    Factorial del 10    **********");
-                System.out.println("********************************************");
+                System.out.println("--------------------------------------------");
+                System.out.println("----------    Factorial del 10    ----------");
+                System.out.println("--------------------------------------------");
                 System.out.println("");
                 factorial();
                 break;
             case 3:
                 System.out.println("");
-                System.out.println("*********************************************");
-                System.out.println("**********        Factorial        **********");
-                System.out.println("*********************************************");
+                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
+                System.out.println("++++++++++        Factorial        ++++++++++");
+                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
                 System.out.println("");
                 System.out.print("Introduce un número para calcular el factorial: ");
-                entradaFactorial(entrada.nextInt());
+                Factorialintroducido(entrada.nextInt());
                 break;
             case 4:
                 System.out.println("");
-                System.out.println("*********************************************");
-                System.out.println("**********          Media          **********");
-                System.out.println("*********************************************");
+                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
+                System.out.println("++++++++++          Media          ++++++++++");
+                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
                 System.out.println("");
                 System.out.print("Introduce un número para calcular la media: ");
                 media(entrada.nextDouble());
                 break;
             case 5:
                 System.out.println("");
-                System.out.println("********************************************");
-                System.out.println("**********        Promedio        **********");
-                System.out.println("********************************************");
+                System.out.println("////////////////////////////////////////////");
+                System.out.println("/////////        Promedio        ///////////");
+                System.out.println("////////////////////////////////////////////");
                 System.out.println("");
                 System.out.print("Introduce la cantidad de números que deseas introducir: ");
-                sumaPromedio(entrada.nextInt());
+                PromediodeNnumeros(entrada.nextInt());
                 break;
             case 6:
                 System.out.println("");
-                System.out.println("*********************************************");
-                System.out.println("**********    Dias de la semana    **********");
-                System.out.println("*********************************************");
+                System.out.println("/////////////////////////////////////////////");
+                System.out.println("//////////    Dias de la semana    //////////");
+                System.out.println("/////////////////////////////////////////////");
                 System.out.println("");
-                diaSemana();
+                diadelaSemana();
                 break;
             case 7:
                 System.out.println("");
@@ -105,7 +114,7 @@ public class Actividad3 {
                 System.out.println("**********     cuadrado 3 * 3     **********");
                 System.out.println("********************************************");
                 System.out.println("");
-                gato();
+                juegogato();
                 break;
                 
         }
@@ -140,7 +149,7 @@ public class Actividad3 {
         
     }
     
-    public static void entradaFactorial(int numeroE){
+    public static void Factorialintroducido(int numeroE){
         
         int numero = numeroE;
         int factorial = 1;
@@ -172,7 +181,7 @@ public class Actividad3 {
         
     }
     
-    public static void sumaPromedio(int numeroI){
+    public static void PromediodeNnumeros(int numeroI){
          
         Scanner entrada = new Scanner(System.in);
         
@@ -216,11 +225,11 @@ public class Actividad3 {
         
     }
     
-    public static void diaSemana(){
+    public static void diadelaSemana(){
         
         String dias[] = new String[7];
   
-        dias[0] = "Lunes";
+        dias[0] = "Lunes";     
         dias[1] = "Martes";
         dias[2] = "Miercoles";
         dias[3] = "Jueves";
@@ -229,14 +238,13 @@ public class Actividad3 {
         dias[6] = "Domingo";
         
         for(String diaS: dias){
-            
             System.out.println(diaS);
             
         }
         
     }
     
-    public static void gato(){
+    public static void juegogato(){
         
         String gato[][] = new String[3][3];
         
